@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  resources :feedbacks
+  resources :users
+  root 'users#index'
 end
